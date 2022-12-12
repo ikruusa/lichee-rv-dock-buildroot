@@ -1,0 +1,19 @@
+# Set initial time to 05. Dec 2022
+# this should be overrided manually or by NTP
+start() {
+    date -s "Dec 5 00:00:00 2022"
+}
+
+case "$1" in
+  start)
+        start
+        ;;
+  stop)
+        ;;
+  restart|reload)
+        ;;
+  *)
+        exit 0
+esac
+exit $?
+

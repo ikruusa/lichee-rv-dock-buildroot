@@ -1,0 +1,18 @@
+# Set proper mixer values
+start() {
+    amixer -c 0 set Headphone playback 75% unmute
+}
+
+case "$1" in
+  start)
+        start
+        ;;
+  stop)
+        ;;
+  restart|reload)
+        ;;
+  *)
+        exit 0
+esac
+exit $?
+

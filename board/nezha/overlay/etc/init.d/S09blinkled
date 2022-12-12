@@ -1,0 +1,18 @@
+# Lights up RGB LED at startup
+start() {
+    sh /root/magenta_blink.sh
+}
+
+case "$1" in
+  start)
+        start
+        ;;
+  stop)
+        ;;
+  restart|reload)
+        ;;
+  *)
+        exit 0
+esac
+exit $?
+

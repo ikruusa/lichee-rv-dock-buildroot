@@ -1,0 +1,4 @@
+/etc/init.d/S04setdate f 755 root root - - - - -
+/etc/init.d/S05setvolume f 755 root root - - - - -
+/etc/init.d/S07speakertest f 755 root root - - - - -
+/etc/init.d/S09blinkled f 755 root root - - - - -
