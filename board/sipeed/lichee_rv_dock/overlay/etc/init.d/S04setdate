@@ -1,6 +1,7 @@
-# Talk to me!
+# Set initial time to 29. Jan 2023
+# this should be overrided manually or by NTP
 start() {
-    speaker-test -t wav -l 1
+    date -s "Jan 29 10:00:00 2023"
 }
 
 case "$1" in

@@ -1,6 +1,6 @@
-# Lights up RGB LED at startup
+# Talk to me!
 start() {
-    sh /root/magenta_blink.sh
+    speaker-test -t wav -l 1 &
 }
 
 case "$1" in

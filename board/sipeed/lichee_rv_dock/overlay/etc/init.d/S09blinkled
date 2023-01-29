@@ -1,7 +1,6 @@
-# Set initial time to 05. Dec 2022
-# this should be overrided manually or by NTP
+# Lights up RGB LED at startup
 start() {
-    date -s "Dec 5 00:00:00 2022"
+    sh /root/demos/leds/magenta_blink.sh &
 }
 
 case "$1" in
